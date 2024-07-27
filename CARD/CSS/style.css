@@ -1,0 +1,85 @@
+body{
+     background-color: blue;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.card-container{
+     background-color: white;
+     width: 350px;
+     height: 30px;
+     height: 700px;
+}
+
+ .img{
+    height: 250px;
+    object-fit: cover;
+    width: 350px;
+ }
+
+ .card-container .img-container{
+     width: 350px;
+     height: 30px;
+
+ }
+  .card-container .card-body .text-container{
+     display: flex;
+     margin-top: 70px;
+     gap: 120px;
+}
+.sizes {
+     display: flex;
+     gap: 20px;
+
+}
+
+.circle-container {
+     display: flex;
+     gap: 20px;
+}
+
+.circle-container .circle {
+
+          height: 20%;
+          width: 20px;
+          background-color: grey;
+          border-radius: 50px;
+
+
+}
+
+
+.circle-container .circle-3{
+     background-color: yellow;
+}
+button.-container button{
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+}
+
+.button-container button {
+      color: white;
+      background-color: blue;
+      border: none;
+}
+
+.dot  {
+     height: 100px;
+     width: 100px;
+     background-color: white;
+     border-radius: 50%;
+     align-items: center;
+} 
+.all circle  {
+     align-items: center
+     ;
+      
+}
+.class-four {
+     "class" : unknown 
+}
+
