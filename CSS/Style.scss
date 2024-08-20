@@ -1,4 +1,5 @@
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,217 +7,107 @@
     outline: none;
     transition: 2s;
     scroll-behavior: smooth;
-    font-family: "Poppins"sans-serif;gh 
+    font-family: "Poppins", sans-serif;
 }
-html{
+
+html {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-.Logo{
+
+body {
+    background-color: #212122;
+}
+
+/* Logo */
+.Logo {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #212122;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     cursor: pointer;
-    transition: 0.3s ease;    
+    transition: 0.3s ease;
     height: 45px;
     width: 100%;
 }
-.pictures{
+
+/* Pictures */
+.pictures {
     position: relative;
     bottom: 230px;
     right: 100px;
 }
-.banner{
+
+/* Banner */
+.banner {
     display: flex;
     font-weight: 800;
     background: transparent;
     margin-top: -25px;
     margin-left: 100px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-size: 20px;
     cursor: pointer;
     transition: 0.3s ease;
 }
-.logs{
+
+.banner:hover {
+    transition: 2s ease-in;
+}
+
+.banner span {
+    text-shadow: 0 0 25px #FF9A22;
+}
+
+/* Logs */
+.logs {
     display: flex;
     justify-content: flex-end;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     height: 20px;
     margin-right: 50px;
     margin-top: -47px;
     gap: 25px;
 }
 
-// .me{
-//     display: flex;
-//     margin-left: 200px;
-
-// }
-.banner :hover{
-  transition: 2s ease-in;
-}
-.banner span{
-    text-shadow: 0 0 25px #FF9A22;
-}
-body{
-    background-color: #212122;
-}
-ul{
-    display: flex;
-    justify-content: center;
-    padding-left: 500px;
-    align-items: center;
-    margin-top: 30px;
-    font-size: 1.2rem;
-    font-family: "Poppins";
-    font-weight: 500;
-    align-items: center;
-    height: 30px;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
-    list-style: none;
-    color: #FCFCFB;
-    gap: 30px;
-}
-#logo,a{
-    color: #fff;
-
-    
-}
-
-.button5{
-    position: relative;
-    right: 2px;
-}
-a:hover,
-.logo a.active {
-    color: #876D5F;
-    background-color: #FCFCFB;
-    transform: scale(1.1);
-    border-bottom: 3px solid var(#2A2D2C);
-    transition: 2s ease-in;
-}
-.texti1{
+/* Text */
+.texti1 {
     display: flex;
     position: relative;
     bottom: 30px;
     font-size: 1.2rem;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     background-color: #F0422D;
     color: white;
     width: 230px;
     text-align: center;
 }
-.text1{
+
+.text1 {
     display: flex;
     transition: 2s ease-in;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     margin-top: 12px;
     z-index: 5;
     line-height: 1;
     font-size: 2.5rem;
-    
 }
 
-.text1:hover{
+.text1:hover {
     color: #FF9A22;
     transition: 2s ease-in;
 }
-.view a{
-    display: flex;
-    display: flex;
-    border: 2px solid #F0422D;
-    width: 25%;
-    left: 20px;
-    padding: 12px 15px;
-    position: relative;
-    top: 100px;
-}
-.text-animation span{
-    position: relative;
-    left: 8px;
-}
-.text-animation {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-.text-animation span::before{
-    content: "Full Stalk Developer";
-    color: #FF9A22;
-    animation: words 5s infinite;
-    -webkit-animation: words 5s infinite;
-}
-.text-animation span::after{
-    content: "";
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    right: -8px;
-    // animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-    // -webkit-animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
-@keyframes cursor{
-    to{
-        border-left: 2px solid #fff;
-    }
-}
-@keyframes words{
-    0%,
-    20%{
-        content: "Full Stalk Developer";
-    }
-    21%,
-    40%{
-        content: "Web Designer";
-    }
-    41%,
-    60%{
-        content: "UI/ UX Designer";
-    } 
-    61%,
-    80%{
-        content: "Web Developer";
-    }
-    81%,
-    100%{
-        content: "Software Tester";
-    }
-}
-@keyframes typing{
-    10%,
-    15%,
-    30%,
-    35%,
-    50%,
-    55%,
-    70%,
-    75%,
-    90%,
-    95%{
-         width: 0;
-    }
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    60%,
-    65%,
-    80%,
-    85%{
-        width: calc(100% + 8px);
-    }
-}
-.btn{
+
+/* Buttons */
+.btn,
+button {
     display: flex;
     margin-top: 35px;
     padding: 12px 15px;
-    background-color:#F0422D;
-    font-family: "Poppins";
+    background-color: #F0422D;
+    font-family: "Poppins", sans-serif;
     font-size: 1.1rem;
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
@@ -226,212 +117,89 @@ a:hover,
     border-radius: 5px;
     margin-left: 200px;
     font-weight: 600;
-    color:white;
+    color: white;
 }
-.btn:hover{
+
+.btn:hover,
+button:hover {
     background-color: #FF9A22;
     transition: 2s ease-in;
     transform: scale(1.3);
     box-shadow: 0 0 100px #F0422D;
 }
-.button5{
-    position: relative;
-    right: 50px;
-}
-button{
+
+/* Media */
+.media {
+    position: absolute;
     display: flex;
-    margin-top: 35px;
-    padding: 12px 15px;
-    background-color:#F0422D;
-    font-family: "Poppins";
-    font-size: 1.1rem;
-    border: 2px solid transparent;
-    letter-spacing: 0.1rem;
-    transform: scale(1.3 ease-in);
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 200px;
-    font-weight: 600;
-    color:white;
+    left: 550px;
+    margin-left: 300px;
+    bottom: 200px;
+    border-radius: 50%;
+    transition: 0.4s ease-in-out;
+    background-repeat: no-repeat;
+    animation: rotate 3s linear infinite;
+    -webkit-animation: rotate 3s linear infinite;
 }
-button:hover{
-  background-color: #FF9A22;
-  transition: 2s ease-in;
-  transform: scale(1.3);
-  box-shadow: 0 0 100px #F0422D;
-}
-.media{
-     position: absolute;
-     display: flex;
-     left: 550px;
-     margin-left: 300px;
-     bottom: 200px;
-     border-radius: 50%;
-     transition: 0.4s ease-in-out;
-     background-repeat: no-repeat;
-     animation: rotate 3s  linear infinite;
-     -webkit-animation: rotate 3s  linear infinite;
-}
- ::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 15px;
- }
- ::-webkit-scrollbar-thumb{
+}
+
+::-webkit-scrollbar-thumb {
     background-color: #F0422D;
- }
- ::-webkit-scrollbar-track{
-     background-color: var(#F0422D);
-     width: 50px;
- }
-@keyframes rotate{
-  from  {
-       transform: rotate(0deg) ;
-     
-}
-   to  {
-      transform: rotate( 360deg);
-
-}
 }
 
-.textbox{
+::-webkit-scrollbar-track {
+    background-color: #F0422D;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* About Section */
+.about-me {
+    display: flex;
+    flex-direction: row;
+    font-family: "Poppins", sans-serif;
     color: #fff;
-    margin-left: 100px;
-    padding-top: 190px;
-}
-.text1{
-    display: flex;
-    margin-top: 12px;
-}
-.text1 h1{
-    font-size: 60px;
-    font-family: "Poppins";
-}
-.text1 h1 span{
-    color: #F0422D;
-    font-family: "Poppins";
-}
-.booking{
-   display: flex;
-   justify-content: flex-end;
-   padding-right: 200px;
-   margin-top: 200px;
-}
-.text5{
-    display: flex;
-    justify-content: center;
-     align-items: flex-end;
-     font-family: "Poppins";
-     margin-right: 100px;
-     gap: 30px;
-     color: #fff;
-     flex-direction: column;
-}
-.text6{
-    display: flex;
-    box-shadow: 0 0 100px #F0422D ;
-    font-family: "Poppins";
-    color: orange;
+    margin-top: -100px;
+    height: 100vh;
+    background-color: #2A2D2C;
 }
 
-.all-pics{
-    display: flex;
-    margin-top: 10px;
-    margin-left:20px;
-    width: 2.2rem;
-    height: 2.1rem;
-    gap: 8px;
-    border-radius: 50%;
-    transition: 0,3s ease-in-out;
-}
-.icons0{
-    display: flex;
-    width: 2.2rem;
-    height: 2.1rem;
-    border-radius: 50%;
-    transition: 0,3s ease-in-out;
-}
-.icons0:hover{
-    transform: scale(1.3)translateY(-5px);
-    box-shadow: 0 0 25px blue;
-    background-color: blue;
-}
-.icons1{
-    display: flex;
-    width: 2.2rem;
-    height: 2.1rem;
-    border-radius: 50%;
-    transition: 0,3s ease-in-out;
-}
-.icons1:hover{
-    transform: scale(1.3)translateY(-5px);
-    box-shadow: 0 0 25px blue;
-    background-color: blue;
-}
-.icons2{
-    display: flex;
-    width: 2.2rem;
-    height: 2.1rem;
-    border-radius: 50%;
-    transition: 0,3s ease-in-out;
-}
-.icons2:hover{
-    transform: scale(1.3)translateY(-5px);
-    box-shadow: 0 0 25px blue;
-    background-color: blue;
-}
-.icons3{
-    display: flex;
-    width: 2.2rem;
-    height: 2.1rem;
-    border-radius: 50%;
-    transition: 0,3s ease-in-out;
-}
-.icons3:hover{
-    transform: scale(1.3)translateY(-5px);
-    box-shadow: 0 0 25px blue;
-    background-color: blue;
-}
-.text7{
-    margin-top: -75px;
-    margin-left: 20px;
-    font-family: "Poppins";
-    color:orange;
-}
-
-//ABOUT SECTION
-.about-me{
- display: flex;
- flex-direction: row;
- font-family: "Poppins";
- color: #fff;
- margin-top: -100px;
- height: 100vh;
- background-color:#2A2D2C;
-}
-#about{
+#about {
     display: flex;
     padding-left: 150px;
     padding-top: 100px;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     gap: 10px;
     flex-direction: column;
     margin-left: 100px;
 }
-.text8{
-   color: #F0422D;
-   margin-left: 30px;
-   font-family: "Poppins";
+
+.text8 {
+    color: #F0422D;
+    margin-left: 30px;
+    font-family: "Poppins", sans-serif;
 }
-.image{
+
+.image {
     cursor: pointer;
     transition: 0.4s ease-in-out;
+}
 
+.image:hover {
+    box-shadow: 0 0 25px red;
 }
-.image:hover{
-   box-shadow: 0 0 25px  red,
-}
-.image{
+
+.image {
     display: flex;
     margin-left: 90px;
     height: 420px;
@@ -439,34 +207,17 @@ button:hover{
     margin-top: 80px;
 }
 
+.about-me img {
+    animation: rotate 3s linear infinite;
+    -webkit-animation: rotate 3s linear infinite;
+}
 
-.about-me img{
-    animation: rotate 3s  linear infinite;
-    -webkit-animation: rotate 3s  linear infinite;
-}
-.text9{
-    font-size: 25px;
-    font-family: "Poppins";
-
-}
-.about2{
-    display: flex;
-    font-family: "Poppins";
-    gap: 30px;
-    flex-direction: column;
-}
-span{
-    color: #FF9A22;
-    font-family: "Poppins";
-}
-.button2{
-
-}
-// MY SERVICES
-.services{
+/* Services Section */
+.services {
     color: #000;
 }
-.services h2{
+
+.services h2 {
     margin-bottom: 5rem;
     display: flex;
     justify-content: center;
@@ -474,13 +225,15 @@ span{
     margin-top: 20px;
     color: #F0422D;
 }
-.services-container{
+
+.services-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 2.5rem;
 }
-.service-box{
+
+.service-box {
     background: #2A2D2C;
     height: 300px;
     color: #fff;
@@ -489,13 +242,15 @@ span{
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
-.service-box:hover{
+
+.service-box:hover {
     background: #F0422D;
     color: #fff;
-    border: 5px solid var(#2A2D2C);
+    border: 5px solid #2A2D2C;
     transform: scale(1.03);
 }
-.service-box .service-info{
+
+.service-box .service-info {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -504,12 +259,14 @@ span{
     align-items: baseline;
     padding: 2rem 3rem;
 }
-.service-info h4{
+
+.service-info h4 {
     font-size: 2rem;
     font-weight: 800;
     line-height: 2;
 }
-.service-info p{
+
+.service-info p {
     font-size: 1.3rem;
     opacity: 60%;
     font-weight: 600;
@@ -517,34 +274,36 @@ span{
     line-height: 1.7;
     margin: auto;
 }
-// POTFOLIO
 
-// Blogs Section
-
-.blogs-box{
+/* Blogs Section */
+.blogs-box {
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.blogs .heading{
+
+.blogs .heading {
     margin-top: 250px;
     position: relative;
     font-size: 2rem;
     color: #F0422D;
     bottom: 50px;
 }
-.blogs-box img{
+
+.blogs-box img {
     width: 6rem;
     border-radius: 50%;
 }
-.wrapper{
+
+.wrapper {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
-.blogs-item{
+
+.blogs-item {
     min-height: 550px;
     max-width: 450px;
     box-shadow: 0 0 25px #F0422D;
@@ -562,33 +321,27 @@ span{
     gap: 1.5rem;
     color: #fff;
 }
-.blogs-item:hover{
-    border: 3px solid var(#212122);
-    transform: translateY(-10px)scale(1.03);
+
+.blogs-item:hover {
+    border: 3px solid #212122;
+    transform: translateY(-10px) scale(1.03);
     box-shadow: 0 0 50px #F0422D;
 }
-.blogs-item h2{
+
+.blogs-item h2 {
     font-size: 2.8rem;
 }
-.blogs-item p{
+
+.blogs-item p {
     font-size: 1rem;
 }
-#star{
-    width: 20px;
-}
-.blogs{
-    position: relative;
-    bottom: 100px;
-    color: #fff;
-}
-.rating{
-    
-}
-// /*contact*/ 
-   .contact{
+
+/* Contact Section */
+.contact {
     background-color: #2A2D2C;
 }
-.contact h2{
+
+.contact h2 {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -598,7 +351,8 @@ span{
     margin-bottom: 3rem;
     color: #F0422D;
 }
-.contact form{
+
+.contact form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -606,662 +360,219 @@ span{
     margin: 5rem auto;
     text-align: center;
 }
-.contact form .input-box{
-     display: flex;
-     justify-content: center;
-     flex-wrap: wrap;
-}
-.contact form .input-box input, .contact form
-textarea{
-    width: 80%;
-    padding: 1.7rem;
-    font-size: 1.8rem;
-    color: #fff;
-    background-color: #080909;
-    border-radius: 2rem;
-    border: 2px solid #F0422D;
-    margin: 1rem 0;
-    resize: none;
-}
-.contact form .btn{
-    position: relative;
-    bottom: 20px;
-    margin-top: 2rem;
-}
-.footer{
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    padding: 40px 0;
-    background-color:#080909 ;
-}
-.footer .social{
-    text-align: center;
-    padding-bottom: 25px;
-    color: #F0422D;
-}
-.footer .social a{
+
+.contact form .input-box {
     display: flex;
-    font-size: 25px;
-    color: var(#F0422D);
-    border: 2px solid #F0422D;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 10px;
-    transition: 0.3s ease-in-out;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.footer .social a:hover{
-    transform: scale(1.2) translateY(-10px);
+
+.contact form .input-box input,
+.contact form textarea {
+    background: transparent;
+    border: 0.3rem solid #F0422D;
+    outline: none;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 10px;
+    width: 100%;
+}
+
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+    background: #212122;
+    border: 0.3rem solid #F0422D;
+}
+
+.contact form .input-box input::placeholder,
+.contact form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact form textarea {
+    resize: none;
+    height: 20rem;
+}
+
+.contact form .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
     background-color: #F0422D;
-    color: #000;
-    box-shadow: 0 0 25px var(#F0422D);
-}
-.footer ul{
-    margin-top: 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-.footer ul li a{
-    color: #fff;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-in-out;
-}
-.footer ul li a:hover{
-    border-bottom: 3px solid var(#000);
-    color: #000;
-}
-.footer ul li{
-    display: inline-block;
-    padding: 0 15px;
-}
-.footer .copyright{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    font-weight: 600;
 }
 
+.contact form .btn:hover {
+    background-color: #FF9A22;
+    transition: 2s ease-in;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #F0422D;
+}
 
+/* Responsive Media Queries */
 
-// @media(max-width : 1366px){
-//     *{
-//         padding: 0;
-//         margin: 0;
-//     }
-//     html{
-//        overflow-x: hidden;
-//     }
-//     body{
-       
-//     }
-//     .media{
-//     position: absolute;
-//     display: flex;
-//     margin-bottom: 800px;
-//     left: 300px;
-//     border-radius: 50%;
-//     }
-//     .logs{
-//         display: none;
-//     }
-//   .text1 h1{
-//     font-size: 50px;
-//   }
-//   .text-animation{
-//     font-size: 30px;
-//   }
-//   .about-me{
-//     display: flex;
-//     justify-content: center;
-//     height: 50vh;
-//     font-size: 30px;
-//   }
-//   .image{
-//     height: 550px;
-//   }
-//   #about{
-//     display: flex;
-//     position: relative;
-//     bottom: 100px;
-//     margin-right: 100px;
-//   }
-//   .my-services{
-//     position: relative;
-//     bottom: 500px;
-//   }
-//   .services{
-//     position: relative;
-//     height: 50%;
-//     bottom: 950px;
-//   }
-//   .services1{
-//     position: relative;
-//     bottom: 950px;
-//   }
-//   .folio{
-//     position: relative;
-//     bottom: 900px;
-//   }
-//   .folio-last{
-//     position: relative;
-//     bottom: 850px;
-//   }
-//   .folio-pics{
-//     display: flex;
-//     flex-direction: column;
-//   }
-//   .lio1{
-//     font-size: 30px;
-//   }
-//   #contact{
-//     position: relative;
-//     bottom: 800px;
-//   }
-// }
+/* Small devices (phones, up to 600px) */
+@media only screen and (max-width: 600px) {
+    .Logo {
+        height: 35px;
+    }
 
-// @media(max-width : 1180px){
-//     *{
-//         padding: 0;
-//         margin: 0;
-//         box-sizing: border-box;
-//     }
-//     .body{
-//         overflow: hidden;
-//     }
-//     .banner{
-//         font-size: 12px;
-//         position: relative;
-//         right: 150px;
-//         overflow: hidden;
-//     }
-//     ul{
-//         display: flex;
-//       font-size: 12px;
-//       gap: 12px;
-//        position: relative;
-//        right: 260px;
-//     }
-//     .texti1{
-//         display: flex;
-//         position: relative;
-//         right: 150px;
-//         font-size: 12px;
-//     }
-//     .text1 h1{
-//         display: flex;
-//         font-size: 20px;
-//         position: relative;
-//         right: 150px;
-//     }
-//     .text-animation{
-//         display: flex;
-//         position: relative;
-//         right: 150px;
-//         font-size: 15px;
-//     }
-//     .media{
-//     position: absolute;
-//     display: flex;
-//     bottom: 200px;
-//     left: 10px;
-// }
-//    .button5{
-//     display: flex;
-//     position: relative;
-//     right: 75px;
-//     padding: 3px 6px;
-//    }
-//    .logs{
-//     position: relative;
-//     left: 60px;
-//     gap: 12px;
-//    }
-//    .about-me{
-//      .image{
-//         position: relative;
-//         right: 100px;
-//      }
-   
-//      }
-//      #about{
-//         position: relative;
-//         right: 253px;
-//         bottom: 50px;
-//      }
-//      .text8{
-//         font-size: 12px;
-//      }
-//      .text9{
-//         font-size: 15px;
-//      }
-//      .about2{
-//         font-size: 8px;
-//      }
-//      button{
-//         display: flex;
-//         position: relative;
-//         padding: 3px 8px;
-//    }
-//    .text18{
-//     font-size: 15px;
-//    }
-//    .services{
-//     display: flex;
-//     margin-top: 30px;
-//    }
-//    .design{
-//     font-size: 15px;
-//    }
-//    .design1 {
-//     display: flex;
-//     line-height: normal;
-//     font-size: 8px;
-//     flex-direction: column;
-//    }
-//    .branding{
-//     font-size: 15px;
-//    }
-//    .branding1{
-//     font-size: 8px;
-//     line-height: normal;
-//    }
-//    .user-interface{
-//     font-size: 15px;
-//    }
-//    .use-interface1{
-//     font-size: 8px;
-//     line-height: normal;
-//    }
-//    .services1{
-//      font-size: 15px;
-//    }
-//    .user-experience{
-//     font-size: 15px;
-//    }
-//    .folio1{
-//     position: relative;
-//     bottom: 400px;
-//    }
-//    .folio{
-//     font-size: 15px;
-//     position: relative;
-//     display: flex;
-//    }
-//    .folio1 h1  {
-//      position: relative;
-//      left: 150px;
-//      top: 50px;
-//      font-size: 12px;
-//    }
-//    .folio1 p{
-//     position: relative;
-//     top: 60px;
-//     left: 150px;
-//    }
-//    .message4 p{
-//     display: none;
-//    }
-//    .message4{
-//      font-size: 12px;
-//    }
-//    .pics{
-//     display: flex;
-//     position: relative;
-//     left: 145px;
-//     top: 60px;
-//    }
-//    .pics1{
-//     position: relative;
-//     right: 230px;
-//     bottom: 300px;
-//    }
-//    button{
-//     display: none;
-//    }
-//     .folio-last{
-//         position: relative;
-//         display: flex;
-//         margin-bottom: 500px;
-//     }
-//     #contact{
-//         position: relative;
-//         bottom: 500px;
-//     }
-//     .footer{
-//         display: flex;
-//         position: relative;
-//         flex-direction: column;
-//         bottom: 500px;
-//     }
-//     .list{
-//         display: flex;
-//         position: relative;
-//         left: 5px;
-//     }
-// }
+    .banner {
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 18px;
+    }
 
-// @media(max-width : 1024px){
-//     *{
-//         padding: 0;
-//         margin: 0;
-//         box-sizing: border-box;
-//     }
-//     html{
-//         grid-template-columns: repeat(1,1fr);
-//     }
-//     body{
-//         overflow: hidden;
-//         gap: 12px;
-//     }
-//       .media{
-//        display: flex;
-//        position: absolute;
-//        bottom: 950px;
-//        margin-left: 400px;
-//       }
-//       ul{
-//         font-size: 20px;
-//       }
-//       .logs{
-//         position: relative;
-//         left: 150px;
-//         bottom: 10px;
-//       }
-//       ul{
-//         position: relative;
-//         left: 10px;
-//         display: flex;
-//         margin-right: 170px;
-//       }
-//       .banner{
-//         position: relative;
-//         display: flex;
-//         left: 10px;
-//         margin-left: 70px;
-//         font-size: 20px;
-//       }
-//       .texti1{
-//         font-size: 25px;
-//         width: 40%;
-//         margin-left: 30px;
-//       }
-//       .text1 h1{
-//         font-size: 30px;
-//         margin-left: 30px;
-//       }
-//       .text-animation{
-//         font-size: 25px;
-//         margin-left: 30px;
-//       }
-//       .button5{
-//         font-size: 20px;
-//         position: relative;
-//         right: 65px;
-//       }
-//       .image{
-//         height: 500px;
-//       }
-//       #about{
-//         margin-left: 200px;
-//         margin-top: -50px;
-//       }
-//    .about-me{
-//      height: 40vh;
-//      margin-left: 60px;
-//      width: 100%;
-//    }
-//    .text8{
-//      font-size: 20px;
-//    }
-//    .text9{
-//     font-size: 20px;
-//    }
-//    .about2{
-//      font-size: 15px;
-//    }
-//    button{
-//       font-size: 20px;
-//    }
-//    .my-services{
-//      position: relative;
-//      bottom: 500px;
-//      font-size: 20px;
-//    }
-//    .services{
-//      position: relative;
-//      bottom: 950px;
-//      font-size: 40px;
-//      height: 170px;
-//    }
-//    .services1{
-//     position: relative;
-//     bottom: 950px;
-//    }
-//    .folio{
-//     position: relative;
-//     left: 80px;
-//    }
-//    .folio1 h1{
-//       font-size: 12px;
-//    }
+    ul {
+        padding-left: 0;
+        margin-top: 20px;
+        font-size: 1rem;
+    }
 
-//    .folio1{
-//     position: relative;
-//     gap: 12px;
-//     font-size: 25px;
-//    }
-//    .folio-last{
-//     position: relative;
-//     bottom: 500px;
-//     left: 60px;
-//    }
-//    #contact{
-//     position: relative;
-//     bottom: 900px;
-//    }
-//    .footer{
-//     position: relative;
-//     bottom: 900px;
-//     left: 50px;
-//    }
-//    }
+    .view a {
+        width: 80%;
+        left: 0;
+        padding: 10px;
+        top: 50px;
+    }
 
-// @media( max-width : 768px){
-    
-//     *{
-//         padding: 0;
-//         margin: 0;
-//         box-sizing: border-box;
-//     }
-//      body{
-//         overflow: hidden;
-//      }
-//     .banner{
-//         font-size: 12px;
-//         position: relative;
-//         right: 150px;
-//         overflow: hidden;
-//     }
-//     ul{
-//        display: flex;
-//        font-size: 12px;
-//        gap: 12px;
-//        position: relative;
-//        right: 260px;
-//     }
-//     .texti1{
-//         right: 100px;
-//         font-size: 20px;
-//         width: 50%;
-//     }
-//     .text1 h1{
-//         right: 100px;
-//     }
-//     .text-animation{
-//         right: 100px;
-//         font-size: 25px;
-//     }
+    .text1 h1 {
+        font-size: 40px;
+    }
 
-//    .button5{
-//     font-size: 25px;
-//     padding: 12px 15px;
-//     right: 90px;
-//    }
-//    .logs{
-//     position: relative;
-//     gap: 12px;
-//      display: flex;
-//      margin-left: 300px;
-//      left: 300px;
-//    }
-//      .image{
-//         position: relative;
-//         right: 100px;
-//         height: 400px;
+    .about-me {
+        flex-direction: column;
+        padding: 20px;
+    }
 
-   
-//      }
-//      #about{
-//         position: relative;
-//         width: 100%;
-//         background-color: #2A2D2C;
-//         top: 50px;
-//         height: 100%;
-//         right: 250px;
-//      }
-//      .about-me{
-//         display: flex;
-//         width: 100%;
-//         height: 50vh;
-//      }
-//      .text8{
-//         font-size: 20px;
-//         bottom: 100px;
-//         position: relative;
-//      }
-//      .text9{
-//         font-size: 20px;
-//         position: relative;
-//         bottom: 100px;
-//      }
-//      .about2{
-//         font-size: 15px;
-//         position: relative;
-//         bottom: 100px;
-//      }
-//      .button2{
-//         position: relative;
-//         bottom: 70px;
-//         display: flex;
-//      }
-//    .design{
-//     font-size: 15px;
-//    }
-//    .my-services{
-//     display: flex;
-//     padding-top: 200px;
-//    }
-//    .services{
-//     display: flex;
-//     margin-top: 470px;
-//    }
-//    .services1{
-//      display: flex;
-//      margin-bottom: 200px;
-//    }
-//    .text17{
-//       position: relative;
-//       top: 500px;
-//    }
-//    .text18{
-//     display: flex;
-//     margin-top: 500px;
-//    }
-//    .design1 {
-//     display: flex;
-//     line-height: normal;
-//     font-size: 8px;
-//     flex-direction: column;
-//    }
-//    .branding{
-//     font-size: 15px;
-//    }
-//    .branding1{
-//     font-size: 8px;
-//     line-height: normal;
-//    }
-//    .user-interface{
-//     font-size: 15px;
-//    }
-//    .use-interface1{
-//     font-size: 8px;
-//     line-height: normal;
-//    }
-//    .services1{
-//      font-size: 15px;
-//    }
-//    .user-experience{
-//     font-size: 15px;
-//    }
-//    .folio{
-//     font-size: 15px;
-//     margin-right: 400px;
-//     bottom: 950px;
-//    }
-//    .folio1 h1  {
-//      position: relative;
-//      left: 150px;
-//      top: 50px;
-//      font-size: 12px;
-//    }
-//    .folio1 p{
-//     position: relative;
-//     top: 60px;
-//     left: 150px;
-//    }
-//    .message4 p{
-//     display: none;
-//    }
-//    .message4{
-//      font-size: 12px;
-//    }
-//    .pics{
-//     display: flex;
-//     position: relative;
-//     left: 145px;
-//     top: 60px;
-//    }
-//    .pics1{
-//     position: relative;
-//     right: 230px;
-//     bottom: 300px;
-//    }
-//    button{
-//     display: none;
-//    }
-//     .folio2{
-//         font-size: 12px;
-//         bottom: 200px;
-//        margin-right: 200px;
-//     }  
-//     #contact{
-//         bottom: 500px;
-//     }
-//     .footer{
-//         bottom: 350px;
-//     }
-//     .list{
-//         left: 5px;
-//     }
-//    }
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 
+    .blogs .heading {
+        font-size: 1.5rem;
+    }
 
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
 
-   
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+}
+
+/* Medium devices (tablets, up to 768px) */
+@media only screen and (max-width: 768px) {
+    .Logo {
+        height: 40px;
+    }
+
+    .banner {
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    ul {
+        padding-left: 100px;
+        margin-top: 25px;
+        font-size: 1.1rem;
+    }
+
+    .view a {
+        width: 50%;
+        left: 10px;
+        padding: 12px;
+        top: 75px;
+    }
+
+    .text1 h1 {
+        font-size: 50px;
+    }
+
+    .about-me {
+        padding: 50px;
+        margin-top: -50px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .blogs .heading {
+        font-size: 1.8rem;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 90%;
+        font-size: 1.6rem;
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    .Logo {
+        height: 45px;
+    }
+
+    .banner {
+        margin-left: 100px;
+        font-size: 22px;
+    }
+
+    ul {
+        padding-left: 150px;
+        margin-top: 30px;
+        font-size: 1.2rem;
+    }
+
+    .view a {
+        width: 30%;
+        left: 20px;
+        padding: 15px;
+        top: 100px;
+    }
+
+    .text1 h1 {
+        font-size: 60px;
+    }
+
+    .about-me {
+        padding: 100px;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .blogs .heading {
+        font-size: 2rem;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 80%;
+        font-size: 1.8rem;
+    }
+}
